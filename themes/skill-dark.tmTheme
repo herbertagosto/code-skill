@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>Skill-Dark</string>
 	<key>comment</key>
-	<string>https://herbertagosto@bitbucket.org/herbertagosto/code-skill.git</string>
+	<string>https://github.com/herbertagosto/code-skill.git</string>
 	<key>semanticClass</key>
 	<string>theme.dark.skill</string>
 	<key>colorSpaceName</key>
