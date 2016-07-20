@@ -1,0 +1,117 @@
+{
+    "Author": {
+        "prefix":"author",
+        "body":[
+            "Herbert Agosto"
+        ],
+        "description": "author"
+    },
+    "Defun": {
+        "prefix":"defun",
+        "body":[
+            "(defun ${1:functionName} ($2)",
+            "\t$3",
+            ")"
+        ],
+        "description": "Defun"
+    },
+    "Procedure": {
+        "prefix":"procedure",
+        "body":[
+            "(procedure ${1:functionName}($2)",
+            "\t$3",
+            ")"
+        ],
+        "description": "Procedure"
+    },
+    "Let": {
+        "prefix":"let",
+        "body":[
+            "(let (${1:variableName})",
+            "\t$2",
+            ")"
+        ],
+        "description": "Let"
+    },
+    "When": {
+        "prefix":"when",
+        "body":[
+            "(when ${1:condition}",
+            "\t$2",
+            ")"
+        ],
+        "description": "When"
+    },
+    "Unless": {
+        "prefix":"unless",
+        "body":[
+            "(unless ${1:condition}",
+            "\t$2",
+            ")"
+        ],
+        "description": "Unless"
+    },
+    "Case": {
+        "prefix":"case",
+        "body":[
+            "(case ${1:key}",
+            "\t(${2:value}",
+            "\t\t$3",
+            "\t)",
+            ")"
+        ],
+        "description": "Case"
+    },
+    "If": {
+        "prefix":"if",
+        "body":[
+            "(if ${1:condition} then",
+            "\t$2",
+            ")"
+        ],
+        "description": "If"
+    },
+    "Ifelse": {
+        "prefix":"ifelse",
+        "body":[
+            "(if ${1:condition} then",
+            "\t$2",
+            "else",
+            "\t$3",
+            ")"
+        ],
+        "description": "Ifelse"
+    },
+    "Foreach": {
+        "prefix":"foreach",
+        "body":[
+            "(foreach ${1:item} ${2:list}",
+            "\t$3",
+            ")"
+        ],
+        "description": "Foreach"
+    },
+    "For": {
+        "prefix":"for",
+        "body":[
+            "(for i ${1:start} ${2:end}",
+            "\t$3",
+            ")"
+        ],
+        "description": "For"
+    },
+    "Setof": {
+        "prefix":"setof",
+        "body":[
+            "setof(x ${1:list} ${2:condition})"
+        ],
+        "description": "Setof"
+    },
+    "Mapcarlambda": {
+        "prefix":"mapcarlambda",
+        "body":[
+            "mapcar(lambda((x) ${1:condition}) ${2:list})"
+        ],
+        "description": "Mapcarlambda"
+    },
+}

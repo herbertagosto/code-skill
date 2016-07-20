@@ -1,0 +1,39 @@
+{
+    "name": "skill",
+    "displayName": "Skill",
+    "description": "Syntax highlighting for Cadence Skill",
+    "version": "0.0.1",
+    "publisher": "herbertagosto",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "skill",
+            "aliases": ["Skill", "skill"],
+            "extensions": [".il",".ils"],
+            "configuration": "./skill.configuration.json"
+        }],
+        "grammars": [{
+            "language": "skill",
+            "scopeName": "source.skill",
+            "path": "./syntaxes/skill.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "skill",
+                "path": "./snippets/skill.json"
+            }
+        ],
+        "themes": [
+            {
+                "label": "Skill-Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/skill-dark.tmTheme"
+            }
+        ]
+    }
+}
