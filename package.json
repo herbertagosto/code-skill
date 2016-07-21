@@ -2,7 +2,7 @@
     "name": "skill",
     "displayName": "Skill",
     "description": "Syntax highlighting for Cadence Skill",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "herbertagosto",
     "engines": {
         "vscode": "^1.0.0"
@@ -11,17 +11,27 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "skill",
-            "aliases": ["Skill", "skill"],
-            "extensions": [".il",".ils"],
-            "configuration": "./skill.configuration.json"
-        }],
-        "grammars": [{
-            "language": "skill",
-            "scopeName": "source.skill",
-            "path": "./syntaxes/skill.tmLanguage"
-        }],
+        "languages": [
+            {
+                "id": "skill",
+                "aliases": [
+                    "Skill",
+                    "skill"
+                ],
+                "extensions": [
+                    ".il",
+                    ".ils"
+                ],
+                "configuration": "./skill.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "skill",
+                "scopeName": "source.skill",
+                "path": "./syntaxes/skill.tmLanguage"
+            }
+        ],
         "snippets": [
             {
                 "language": "skill",
