@@ -2,7 +2,7 @@
     "name": "skill",
     "displayName": "Skill",
     "description": "Syntax highlighting for Cadence Skill",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "herbertagosto",
     "engines": {
         "vscode": "^1.0.0"
