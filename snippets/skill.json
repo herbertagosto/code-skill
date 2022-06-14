@@ -1,10 +1,26 @@
 {
-    "Author": {
-        "prefix":"author",
+    "Header": {
+        "prefix":"header",
         "body":[
-            "Herbert Agosto"
+            "/*\t$TM_FILENAME",
+            "",
+            "\t${2:author}",
+            "\t${3:company}",
+            "\t$CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR",
+            "",
+            "\t${5:description}",
+            "*/"
         ],
-        "description": "author"
+        "description": "File header template"
+    },
+    "Region": {
+        "prefix":"region",
+        "body":[
+            ";region ${1:region name}",
+            "$2",
+            ";endregion"
+        ],
+        "description": "Region folding"
     },
     "Defun": {
         "prefix":"defun",
@@ -13,7 +29,7 @@
             "\t$3",
             ")"
         ],
-        "description": "Defun"
+        "description": "Defines function"
     },
     "Procedure": {
         "prefix":"procedure",
@@ -22,7 +38,7 @@
             "\t$3",
             ")"
         ],
-        "description": "Procedure"
+        "description": "Defines function"
     },
     "Let": {
         "prefix":"let",
@@ -31,7 +47,7 @@
             "\t$2",
             ")"
         ],
-        "description": "Let"
+        "description": "Define local variables"
     },
     "When": {
         "prefix":"when",
@@ -40,7 +56,7 @@
             "\t$2",
             ")"
         ],
-        "description": "When"
+        "description": "Pass if condition is non-nil"
     },
     "Unless": {
         "prefix":"unless",
@@ -49,7 +65,7 @@
             "\t$2",
             ")"
         ],
-        "description": "Unless"
+        "description": "Pass if condition is nil"
     },
     "Case": {
         "prefix":"case",
@@ -60,7 +76,7 @@
             "\t)",
             ")"
         ],
-        "description": "Case"
+        "description": "Branches to the value equal to key"
     },
     "If": {
         "prefix":"if",
@@ -71,8 +87,8 @@
         ],
         "description": "If"
     },
-    "Ifelse": {
-        "prefix":"ifelse",
+    "If Else": {
+        "prefix": ["ifelse", "else"],
         "body":[
             "(if ${1:condition} then",
             "\t$2",
@@ -80,7 +96,7 @@
             "\t$3",
             ")"
         ],
-        "description": "Ifelse"
+        "description": "If Else"
     },
     "Foreach": {
         "prefix":"foreach",
@@ -101,17 +117,39 @@
         "description": "For"
     },
     "Setof": {
-        "prefix":"setof",
+        "prefix":"setof, linq",
         "body":[
             "setof(x ${1:list} ${2:condition})"
         ],
-        "description": "Setof"
+        "description": "Filter a list"
     },
-    "Mapcarlambda": {
-        "prefix":"mapcarlambda",
+    "Mapcar Lambda": {
+        "prefix": ["mapcarlambda", "lambda", "linq"],
         "body":[
             "mapcar(lambda((x) ${1:condition}) ${2:list})"
         ],
-        "description": "Mapcarlambda"
+        "description": "Modify all items in a list"
     },
+    "Index": {
+        "prefix":"index",
+        "body":[
+            "index(${1:stringToEvaluate} ${2:stringToSearch})"
+        ],
+        "description": "Get the remainder of [stringToEvaluate]"
+    },
+    "axlSelectByName": {
+        "prefix":"axlSelectByName",
+        "body":[
+            "axlSelectByName(${1:objectType} ${2:objectName})"
+        ],
+        "description": "Get dbid by name. [objectType] = NET, PIN, COMPONENT, ..."
+    },
+    "Author": {
+        "prefix":"author",
+        "body":[
+            "Herbert Agosto"
+        ],
+        "description": "Author"
+    }
+    
 }
