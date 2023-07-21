@@ -26,7 +26,9 @@
         "prefix":"defun",
         "body":[
             "(defun ${1:functionName} ($2)",
-            "\t$3",
+            "\t(let ()",
+            "\t\t$3",
+            "\t)",
             ")"
         ],
         "description": "Defines function"
@@ -35,7 +37,9 @@
         "prefix":"procedure",
         "body":[
             "(procedure ${1:functionName}($2)",
-            "\t$3",
+            "\t(let ()",
+            "\t\t$3",
+            "\t)",
             ")"
         ],
         "description": "Defines function"
@@ -73,6 +77,9 @@
             "(case ${1:key}",
             "\t(${2:value}",
             "\t\t$3",
+            "\t)",
+            "\t(t",
+            "\t\tt",
             "\t)",
             ")"
         ],
@@ -136,13 +143,6 @@
             "index(${1:stringToEvaluate} ${2:stringToSearch})"
         ],
         "description": "Get the remainder of [stringToEvaluate]"
-    },
-    "axlSelectByName": {
-        "prefix":"axlSelectByName",
-        "body":[
-            "axlSelectByName(${1:objectType} ${2:objectName})"
-        ],
-        "description": "Get dbid by name. [objectType] = NET, PIN, COMPONENT, ..."
     },
     "Author": {
         "prefix":"author",
