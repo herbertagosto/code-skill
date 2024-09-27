@@ -25,33 +25,33 @@
     "Defun": {
         "prefix":"defun",
         "body":[
-            "(defun ${1:functionName} ($2)",
+            "(defun ${1:FuncName} (${2:arg1 arg2 ...})",
             "\t(let ()",
             "\t\t$3",
             "\t)",
             ")"
         ],
-        "description": "Defines function"
+        "description": "Defines a function with the name and formal argument list you specify"
     },
     "Procedure": {
         "prefix":"procedure",
         "body":[
-            "(procedure ${1:functionName}($2)",
+            "(procedure ${1:FuncName}(${2:arg1 arg2 ...})",
             "\t(let ()",
             "\t\t$3",
             "\t)",
             ")"
         ],
-        "description": "Defines function"
+        "description": "Defines a function using a formal argument list"
     },
     "Let": {
         "prefix":"let",
         "body":[
-            "(let (${1:variableName})",
+            "(let (${1:var1 var2 ...})",
             "\t$2",
             ")"
         ],
-        "description": "Define local variables"
+        "description": "Use to declare a collection of local variables"
     },
     "When": {
         "prefix":"when",
@@ -60,7 +60,7 @@
             "\t$2",
             ")"
         ],
-        "description": "Pass if condition is non-nil"
+        "description": "If the result is non-nil, evaluates the sequence of expressions and returns the value of the last expression"
     },
     "Unless": {
         "prefix":"unless",
@@ -69,7 +69,7 @@
             "\t$2",
             ")"
         ],
-        "description": "Pass if condition is nil"
+        "description": "If the result is true (non-nil), it returns nil; otherwise evaluates the body expressions in sequence and returns the value of the last expression"
     },
     "Case": {
         "prefix":"case",
@@ -92,7 +92,7 @@
             "\t$2",
             ")"
         ],
-        "description": "If"
+        "description": "Executes then expression if the condition is true (that is, its value is non-nil)"
     },
     "If Else": {
         "prefix": ["ifelse", "else"],
@@ -103,7 +103,7 @@
             "\t$3",
             ")"
         ],
-        "description": "If Else"
+        "description": "If the condition is true, the sequence of expressions between then and else is evaluated. If the condition is nil instead, the sequence of expressions following the else keyword is evaluated"
     },
     "Foreach": {
         "prefix":"foreach",
@@ -112,7 +112,7 @@
             "\t$3",
             ")"
         ],
-        "description": "Foreach"
+        "description": "Evaluates one or more expressions for each element of a list of values"
     },
     "For": {
         "prefix":"for",
@@ -121,28 +121,28 @@
             "\t$3",
             ")"
         ],
-        "description": "For"
+        "description": "Loop i variable from the start to end integer"
     },
     "Setof": {
         "prefix":"setof, linq",
         "body":[
             "setof(x ${1:list} ${2:condition})"
         ],
-        "description": "Filter a list"
+        "description": "Returns a new list containing only those elements in a list or the keys in an association table that satisfy an expression"
     },
     "Mapcar Lambda": {
         "prefix": ["mapcarlambda", "lambda", "linq"],
         "body":[
             "mapcar(lambda((x) ${1:condition}) ${2:list})"
         ],
-        "description": "Modify all items in a list"
+        "description": "Use to transform all items in the list"
     },
     "Index": {
         "prefix":"index",
         "body":[
-            "index(${1:stringToEvaluate} ${2:stringToSearch})"
+            "index(${1:string1} ${2:string2})"
         ],
-        "description": "Get the remainder of [stringToEvaluate]"
+        "description": "Returns a string consisting of the remainder of string1 beginning with the first occurrence of string2."
     },
     "Author": {
         "prefix":"author",
