@@ -1,0 +1,78 @@
+{
+	"$schema": "vscode://schemas/color-theme",
+	"name": "Skill Dark Modern",
+	"include": "./dark_modern.json",
+	"colors": {
+		"editor.foreground": "#abb2bf",
+	},
+	"tokenColors": [
+		{
+			"scope": "comment",
+			"settings": {
+				"foreground": "#546E7A"
+			}
+		},
+		{
+			"scope": "markup.heading",
+			"settings": {
+				"foreground": "#df4350"
+			}
+		},
+		{
+			"scope": "keyword.control",
+			"settings": {
+				"foreground": "#b667dd"
+			}
+		},
+		{
+			"scope": "storage",
+			"settings": {
+				"foreground": "#b667dd"
+			}
+		},
+		{
+			"scope": "entity.name.function",
+			"settings": {
+				"foreground": "#61afef"
+			}
+		},
+		{
+			"scope": "constant.numeric",
+			"settings": {
+				"foreground": "#cb9a5b"
+			}
+		},
+		{
+			"scope": "variable.interpolation",
+			"settings": {
+				"foreground": "#be5046"
+			}
+		},
+		{
+			"scope": ["constant.other.symbol", 
+				"string"
+				],
+			"settings": {
+				"foreground": "#3aa9c2"
+			}
+		},
+		{
+			"scope": "constant.language.boolean",
+			"settings": {
+				"foreground": "#cecb20"
+			}
+		},
+		{
+			"scope": "punctuation.definition.string",
+			"settings": {
+				"foreground": "#86ac6a"
+			}
+		},
+		{
+			"scope": "constant.character.escape",
+			"settings": {
+				"foreground": "#56b6b9"
+			}
+		},
+	]
+}

@@ -46,7 +46,12 @@
         ],
         "themes": [
             {
-                "label": "Skill-Dark",
+                "label": "Skill Dark Modern",
+                "uiTheme": "vs-dark",
+                "path": "./themes/skill_dark_modern.json"
+            },
+            {
+                "label": "Skill Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/skill-dark.tmTheme"
             }
