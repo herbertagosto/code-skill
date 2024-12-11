@@ -13,7 +13,7 @@ Syntax highlighter to skill files in visual studio code.
 * [Snippet](#snippet)
 * [Theme](#theme)
 
-#### Syntax Highlighting
+### Syntax Highlighting
 
 <img src="https://github.com/herbertagosto/code-skill/blob/main/resources/images/skill-syntax-dark.png?raw=true" alt="Image showing syntax highlighting on Skill Dark Modern theme">
 
@@ -58,6 +58,8 @@ your blocks of code...
 
 ### Snippet
 
+Type the keyword (or part of it) then hit `Space`.
+
 ```skill
 region
 defun
@@ -66,7 +68,6 @@ let
 when
 unless
 case
-if
 if else
 foreach
 for
@@ -76,20 +77,29 @@ mapcar lambda
 
 ### Theme
 
-#### Skill Dark Modern 
-
+Skill Dark Modern
 <img src="https://github.com/herbertagosto/code-skill/blob/main/resources/images/skill-syntax-dark.png?raw=true" alt="Image showing syntax highlighting on Skill Dark Modern theme">
 
-#### Skill Light Modern
-
+Skill Light Modern
 <img src="https://github.com/herbertagosto/code-skill/blob/main/resources/images/skill-syntax-light.png?raw=true" alt="Image showing syntax highlighting on Skill Light Modern theme">
 
 
 ## Extension Settings
 
-This extension contributes the following settings:
+This extension contributes the following settings (press `Ctrl` + `,` to open settings):
 
-* `skill.maxNumberOfProblems`: Controls the maximum number of problems produced by the server.
+### Code Completion Settings
+
+* `skill.completion.enableAllegroSkillFunctions`: Enable Allegro SKILL functions.
+
+* `skill.completion.enableFrameworkIISkillFunctions`: Enable Framework II SKILL functions.
+
+* `skill.completion.userCustomKeywords`: Configure user's own keywords. Use | char to separate. Example: skillCustomKeyword1|skillCustomKeyword2.
+
+### Diagnostic Settings
+
+* `skill.diagnostic.maxNumberOfProblems`: Limit the maximum number of problems produced.
+
 
 <!-- 
 * `myExtension.enable`: Enable/disable this extension.
@@ -110,20 +120,20 @@ Calling out known issues can help limit users opening duplicate issues against y
 * Initial release
 
 ### 0.2.0
-* Fix #1
-* Fix #2
+* Fix [#1](https://github.com/herbertagosto/code-skill/issues/1)
+* Fix [#2](https://github.com/herbertagosto/code-skill/issues/2)
 
 ### 0.3.0
 * Add region folding
 * Add new items in configuration
 
 ### 0.4.0
-* Resolve #3. Add ocean files *.ocn in extensions
+* Resolve [#3](https://github.com/herbertagosto/code-skill/issues/3). Add ocean files *.ocn in extensions
 
 ### 0.5.0
 * Add Skill Dark Modern theme
 * Update Snippets
-* Remove comma after 'type' by @SeanStrain in #4
+* Remove comma after 'type' by @SeanStrain in [#4](https://github.com/herbertagosto/code-skill/issues/4)
 
 ### 0.6.0
 * Add **Go to Definition**
@@ -132,9 +142,21 @@ Calling out known issues can help limit users opening duplicate issues against y
 * Add Diagnostic (limited)
 * Update syntax highlighting and themes
 
+### 0.7.0
+* Update Document Symbol
+* Update Code Completion
+* Update Snippets
+* Resolve [#5](https://github.com/herbertagosto/code-skill/issues/5). Add Framework II SKILL Functions
+
 ## For more information
 
 * [Reach me](http://herbagosto@gmail.com)
+
+
+## Support
+
+<a href="https://www.buymeacoffee.com/hagosto" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
 
 
 **Enjoy!**
