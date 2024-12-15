@@ -90,11 +90,14 @@ This extension contributes the following settings (press `Ctrl` + `,` to open se
 
 ### Code Completion Settings
 
+* `skill.completion.wordBasedSuggestions`: Controls whether completions should be computed based on words in the document and from which documents they are computed.
+
 * `skill.completion.enableAllegroSkillFunctions`: Enable Allegro SKILL functions.
 
 * `skill.completion.enableFrameworkIISkillFunctions`: Enable Framework II SKILL functions.
 
-* `skill.completion.userCustomKeywords`: Configure user's own keywords. Use | char to separate. Example: skillCustomKeyword1|skillCustomKeyword2.
+* `skill.completion.userCustomKeywords`: Configure user's own keywords. Use | char to separate.\
+ Example: skillCustomKeyword1|skillCustomKeyword2.
 
 ### Diagnostic Settings
 
@@ -148,6 +151,11 @@ Calling out known issues can help limit users opening duplicate issues against y
 * Update Snippets
 * Resolve [#5](https://github.com/herbertagosto/code-skill/issues/5). Add Framework II SKILL Functions
 
+### 0.8.0
+* Add Word Base Suggestions
+* Resolve [#6](https://github.com/herbertagosto/code-skill/issues/6). Suggest words from the active document
+* Resolve [#7](https://github.com/herbertagosto/code-skill/issues/7). Suggest words from all open documents
+
 ## For more information
 
 * [Reach me](http://herbagosto@gmail.com)
@@ -155,7 +163,7 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 ## Support
 
-<a href="https://www.buymeacoffee.com/hagosto" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/hagosto" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 
 
