@@ -101,7 +101,7 @@ This extension contributes the following settings:
 * `skill.completion.userCustomKeywords`: Configure user's own keywords. Use | char to separate.\
  *Example: userKeyword1|userKeyword2.*
 
-* `skill.diagnostic.maxNumberOfCompletions`: Limit the maximum number of completions produced.
+* `skill.completion.maxNumberOfCompletions`: Limit the maximum number of completions produced.
 
 ### Diagnostic Settings
 
