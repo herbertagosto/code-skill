@@ -12,6 +12,13 @@
 - Format the Selected Lines in an Editor
 - Incrementally Format Code as the User Types
 
+## [0.9.1] - 2025-1-4
+
+### Fixed
+
+- The documentation comment `doc` is missing a parameter
+- Some user keywords are not highlighted
+
 ## [0.9.0] - 2024-12-28
 
 ### Added
@@ -101,8 +108,3 @@
 - Syntax highlighting
 - Skill Dark theme
 - Snippets
-
-
-
-
-
