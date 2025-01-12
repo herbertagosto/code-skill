@@ -94,12 +94,11 @@ This extension contributes the following settings:
 
 * `skill.completion.wordBasedSuggestions`: Controls whether completions should be computed based on words in the document and from which documents they are computed.
 
-* `skill.completion.enableAllegroSkillFunctions`: Enable Allegro SKILL functions.
+* `skill.completion.enableAllegroSkillFunctions`: Controls whether to show Allegro SKILL functions.
 
-* `skill.completion.enableFrameworkIISkillFunctions`: Enable Framework II SKILL functions.
+* `skill.completion.enableFrameworkIISkillFunctions`: Controls whether to show Framework II SKILL functions.
 
-* `skill.completion.userCustomKeywords`: Configure user's own keywords. Use | char to separate.\
- *Example: userKeyword1|userKeyword2.*
+* `skill.completion.userCustomKeywords`: Configure user's keywords. Use `|` char to separate.
 
 * `skill.completion.maxNumberOfCompletions`: Limit the maximum number of completions produced.
 
